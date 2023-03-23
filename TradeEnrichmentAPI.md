@@ -46,22 +46,27 @@ management firms. The traders need to perform trade validation based on certain 
 policymaking bodies. For example, in our project we have the following categories of rules -
 
 - client jurisdiction mandate (CJM)  [Table name : `CJMRules`]
+
   - Any trade must be validated against set of rules prescribed state authorized body.
   - For example Indian investment agencies need to comply against the rules of `SEBI`.
   
 - trader mandate (TM)  [Table name : `TMRules`]
+
   - Investment agencies do allotment of traders based on client category. 
   - Firm may choose particular experienced trader to cater particular category of client.
 
 - exclusions (EX)  [Table name : `EXRules`]
+
     - These are strict rules and any trade that violates these rules is strictly prohibited.
   
 - client exclusion (CE)  [Table name : `CERules`]
+
     - Clients have opted to apply certain set of rules on themselves.
     - For instance certain client may not want to invest in stocks from certain type of industry.
     - In such case, there should be alert/ warning raised by the system before trader proceeds further.
 
 I have worked on following APIs
+
     - RuleInceptionAPI
            - API to capture and store rules from policymaking bodies
            - We can perform all kinds of CRUD operations on these rules using `RuleInceptionAPI`
@@ -154,6 +159,7 @@ rule.matches({
 ```markdown
 1. What used to happen after trade is marked as valid/invalid?
 2. What would traders do once trade has been validated?
+
     - Each trade goes through its life cycle like `trade validation -> actual trade -> post trade audit` etc.
     - Our product team (business analyst) keeps gathering requirements and new set of rules.  
     - To be honest, the project is still it's inception phase and over the time the volume of rules would surely be in
@@ -166,6 +172,7 @@ rule.matches({
 
 ```markdown
 1. What other APIs did you have in the project?
+
      - We had other APIs to perform other parts of processes during trade lifecycle, but I did not get opportunity to 
       work on them.
     - To give you an example, we had one microservice dedicated for `Identity and Access Management` (`IDAM`)
@@ -179,6 +186,7 @@ rule.matches({
 ```markdown
 1. What was your team composition like?
 2. What is your experience/ role in the project?
+
      - We had separate and dedicated data engineering team who would do data sourcing part for us
      - In my development team (scrum team), we were 8 people 
        (3 senior developers, 1 architect, 1 DB admin, 1 devops, 2 mid/junior developer ).
