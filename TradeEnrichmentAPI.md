@@ -38,7 +38,7 @@ be updated, deployed, and scaled to meet demand for specific functions of an app
 
 #### Project Name: `TradeEnrichmentAPI`
 
-###### Storyline
+# Storyline
 
 Our project is microservice architecture containing multiple REST APIs. The project is aimed to solve real time trade
 validation for the investment agencies. The end users of our application are traders associated with large investment
@@ -83,7 +83,7 @@ I have worked on following APIs
            - Also at the backend, we have used `mongoDB` for better performance
 
 
-##### Expected interview questions for above story line
+## Expected interview questions for above story line
 
 ```markdown
 1. Where do you source your data from? 
